@@ -1,0 +1,22 @@
+get:
+  tags:
+    - Calendar
+  operationId: FetchCalendarById
+  summary: Get a calendar
+  description: |
+    Fetch specific Calendar by ID belonging to the user specified in the access token header.
+  parameters:
+    - in: path
+      name: id
+      schema:
+        type: string
+        example: 448052ad-27f8-49af-b636-21495e5
+      required: true
+      description: The unique identifier of the Calendar
+  responses:
+    '200':
+      description: fetched Calendar based on ID.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CalendarResponse'
