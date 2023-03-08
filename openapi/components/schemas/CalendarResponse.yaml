@@ -4,4 +4,4 @@ properties:
     type: string
     example: true
   data:
-    $ref: '#/components/schemas/Calendar'
+    $ref: '../components/schemas/Calendar.yaml'
