@@ -23,9 +23,9 @@ properties:
     example: UUID
     description: The unique auto-generated identifier for the calendar
   calendarSettings:
-    $ref: '../components/schemas/CalendarSetting.yaml'
+    $ref: './CalendarSetting.yaml'
   viewSettings:
-    $ref: '../components/schemas/ViewSetting.yaml'
+    $ref: './ViewSetting.yaml'
   providerId:
     type: string
     example: 6ae17c2e-8f8e-4e05-a69d-25ce57f2470c
