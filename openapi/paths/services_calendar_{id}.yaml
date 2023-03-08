@@ -13,6 +13,10 @@ get:
         example: 448052ad-27f8-49af-b636-21495e5
       required: true
       description: The unique identifier of the Calendar
+  security:
+    - main_auth:
+        - 'read:users'
+    - api_key: []
   responses:
     '200':
       description: fetched Calendar based on ID.

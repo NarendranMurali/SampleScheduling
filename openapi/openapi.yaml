@@ -21,7 +21,7 @@ tags:
   - name: Tag
     description: This is a tag description.
   - name: Calendar
-    description: 
+    description: Calendar settings API
 servers:
   - url: 'https://{tenant}/api/v1'
     variables:
