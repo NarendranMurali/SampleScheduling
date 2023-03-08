@@ -1,0 +1,25 @@
+type: object
+required:
+  - currency
+  - timeZoneId
+properties:
+  currency:
+    type: string
+    example: USD
+    description: The currency code in ISO
+  language:
+    type: string
+    example: English
+    description: Calendar settings language
+  name:
+    type: string
+    example: Test
+    description: Name of the calendar
+  showLocalTimeZone:
+    type: boolean
+    example: false
+    description: Show local time zone
+  timeZoneId:
+    type: string
+    example: "Europe/London"
+    description: Represents the specific time zone, using the standard format - Europe/London

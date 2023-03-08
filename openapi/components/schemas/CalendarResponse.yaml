@@ -1,0 +1,7 @@
+type: object
+properties:
+  response:
+    type: string
+    example: true
+  data:
+    $ref: '#/components/schemas/Calendar'

@@ -1,0 +1,37 @@
+type: object
+required:
+  - currency
+  - timeZoneId
+properties:
+  calendarView:
+    type: string
+    example: WEEKLY
+    description: WEEKLY/MONTHLY/DAILY
+  customTimeSlot:
+    type: integer
+    example: 15
+    description: Custom time slot
+  doubleBooking:
+    type: boolean
+    example: false
+    description: Enable/disable double booking
+  duration:
+    type: integer
+    example: 15
+    description: Duration
+  offHoursBooking:
+    type: boolean
+    example: false
+    description: Enable/disable off-hours booking
+  startHour:
+    type: integer
+    example: 9
+    description: Start hours
+  timeFormat:
+    type: integer
+    example: 24
+    description: 12 or 24 hours format
+  weekStartDay:
+    type: string
+    example: "MONDAY"
+    description: Week start day
