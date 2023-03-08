@@ -20,6 +20,8 @@ tags:
     description: Operations about users.
   - name: Tag
     description: This is a tag description.
+  - name: Calendar
+    description: Calendar settings API
 servers:
   - url: 'https://{tenant}/api/v1'
     variables:
@@ -36,6 +38,9 @@ paths:
     $ref: paths/path-item.yaml
   /pathItemWithExamples:
     $ref: paths/path-item-with-examples.yaml
+  '/services/calendar/{id}':
+    $ref: 'paths/services_calendar_{id}.yaml'
+
 components:
   securitySchemes:
     main_auth:
