@@ -1,0 +1,40 @@
+type: object
+required:
+  - calendar
+  - brand
+  - merchant
+  - providerId
+  - providerType
+properties:
+  merchant:
+    type: string
+    example: 448052ad-27f8-49af-b636-21495e570510
+    description: The unique identifier for the merchant/client/company
+  brand:
+    type: string
+    example: 110003eb-76c1-4b81-a96a-4cdf91bf70fb
+    description: The unique identifier which specifies the brand that the account/calendar belongs to
+  calendar:
+    type: string
+    example: 448052ad-27f8-49af-b636-21495e570510
+    description: The unique identifier of the merchant/staff to whom it belongs
+  id:
+    type: string
+    example: UUID
+    description: The unique auto-generated identifier for the calendar
+  calendarSettings:
+    $ref: '../components/schemas/CalendarSetting.yaml'
+  viewSettings:
+    $ref: '../components/schemas/ViewSetting.yaml'
+  providerId:
+    type: string
+    example: 6ae17c2e-8f8e-4e05-a69d-25ce57f2470c
+    description: The unique identifier of the staff to whom the calendar settings belong
+  providerType:
+    type: string
+    example: STAFF
+    description: Calendar settings belongs to MERCHANT/STAFF
+  createdBy:
+    type: string
+    example: 6ae17c2e-8f8e-4e05-a69d-25ce57f2470c
+    description: The unique identifier which specifies the person who created the Calendar
