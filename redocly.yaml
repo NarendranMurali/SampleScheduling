@@ -1,11 +1,7 @@
 # See https://redocly.com/docs/cli/configuration/ for more information.
 apis:
-  internal@latest: 
+  sample@v1: 
     root: openapi/openapi.yaml
-  external@latest: 
-    root: openapi/openapi.yaml
-    decorators:
-      remove-x-internal: on
 extends:
   - recommended
 rules:
