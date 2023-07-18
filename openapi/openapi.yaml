@@ -16,6 +16,7 @@ info:
 tags:
   - name: Echo
     description: Example echo operations.
+    x-internal: true
   - name: User
     description: Operations about users.
   - name: Tag
