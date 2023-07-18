@@ -7,6 +7,7 @@ parameters:
 get:
   tags:
     - User
+  x-internal: true
   summary: Get user by user name
   description: |
     Some description of the operation.
@@ -47,6 +48,7 @@ get:
 put:
   tags:
     - User
+  x-internal: true
   summary: Updated user
   description: This can only be done by the logged in user.
   operationId: updateUser

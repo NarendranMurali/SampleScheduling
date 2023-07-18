@@ -19,6 +19,7 @@ tags:
     x-internal: true
   - name: User
     description: Operations about users.
+    x-internal: true
   - name: Tag
     description: This is a tag description.
   - name: Calendar
