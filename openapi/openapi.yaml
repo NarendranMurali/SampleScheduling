@@ -34,6 +34,7 @@ servers:
 paths:
   '/users/{username}':
     $ref: 'paths/users_{username}.yaml'
+    x-internal: true
   /echo:
     $ref: paths/echo.yaml
   /pathItem:
